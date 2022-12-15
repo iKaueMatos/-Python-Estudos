@@ -5,7 +5,6 @@
 #'+' - atualização da leitura e escrita
 
 
-
 usuario = input("Informe seu nome completo: ")
 
 if usuario == 'kaue':
@@ -34,14 +33,16 @@ if banco == lista_bancos:
     print('Verificando banco \n')
     print('Banco valido.....')
 
-print('Gerando arquivo par aconfirmação de daods: ')
+print('Gerando um arquivo par aconfirmação de daods: ')
 
-file = open("dados-pessoais.txt",'w+')
-file.write(f"Banco:{banco}\n")
-file.write(f"Agencia:{agencia}\n")
-file.write(f"Conta:{conta}\n")
-file.seek(0,0)
-print(file.read())
+try:
+    file = open("dados-pessoais.txt",'w+')
+    file.write(f"Banco:{banco}\n")
+    file.write(f"Agencia:{agencia}\n")
+    file.write(f"Conta:{conta}\n")
+    file.seek(0,0)
+finally:
+    print(file.read())
 
 
 
