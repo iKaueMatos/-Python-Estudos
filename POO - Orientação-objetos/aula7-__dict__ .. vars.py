@@ -12,6 +12,7 @@ class Pessoa:
     def get_ano_nascimento(self):
         return self.ano_atual - self.idade
 
+
 p1 = Pessoa('João',35)
 #p1.nome = 'EITA'
 
