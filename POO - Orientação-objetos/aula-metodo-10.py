@@ -10,7 +10,7 @@ class Pessoa:
         self.idade = idade
         self.estado = estado
 
-    @classmethod #Permite você chamar uma classe sem receber SELF,mais e neessario receber um parametro
+    @classmethod #Permite você chame  uma classe sem receber SELF,mais e neessario receber um parametro
     def metodo_de_classe(cls):
         print('Hey')
 
