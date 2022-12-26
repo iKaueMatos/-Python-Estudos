@@ -4,7 +4,6 @@ class Aumentosalario:
         self.nome = nome
         self.aumento = aumento
 
-
     def retorna_valores(self):
         return self.salario,self.aumento
     def calculo_aumento(self):
@@ -13,7 +12,6 @@ class Aumentosalario:
 
     def novo_salario(self):
         return self.aumento + self.salario
-
 
 
 nome = input('Digite seu nome: ')
